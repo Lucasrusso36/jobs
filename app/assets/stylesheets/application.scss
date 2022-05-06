@@ -1,13 +1,14 @@
-@import "custom";
-@import "bootstrap/scss/bootstrap";
-@import "login";
+@import 'custom';
+@import 'bootstrap/scss/bootstrap';
+@import 'login';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 
 .btn-site-light, .btn-site-light:hover {
   color: $site-red;
   font-weight: bold;
   border-color: $site-red;
   &:hover {
-     box-shadow: 0px 0px 0px 1px $site-red;
+    box-shadow: 0px 0px 0px 1px $site-red;
   }
 }
 
@@ -18,4 +19,20 @@ h1.impact-text {
 
 .bg-site-red {
   background-color: $site-red;
+}
+
+.th-text-color {
+  color: #4f4f4f
+}
+
+.page-item.active .page-link {
+  background-color: $site-red;
+  border-color: $site-red;
+}
+
+.vacancy-card, .card {
+  border-radius: 1rem;
+  .card-header:first-child {
+    border-radius: 1rem 1rem 0px 0px;
+  }
 }
